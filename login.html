@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/head.css">
+</head>
+<body>
+<div id="container">
+    <nav>
+        <div style="width: 1360px;margin: 0 auto;">
+        <ul id="leftNav">
+            <li>喵，欢迎来到天猫</li>
+            <li><a href="#">请登录</a></li>
+            <li><a href="login.html" target="_blank">免费注册</a></li>
+        </ul>
+        <ul id="rightNav">
+            <li id="infoT"><img src="img/common/dire.png"><a href="#">网站导航</a>
+                <div id="info">
+                    <div class="infoStyle">
+                        <h2 style="color: aqua">热点推荐Hot</h2>
+                        <div><a href="#">天猫超市</a></div>
+                        <div><a href="#">女装新品</a></div>
+                        <div><a href="#">试美装</a></div>
+                        <div><a href="#">精明妈咪</a></div>
+                    </div>
+                    <div class="infoStyle">
+                        <h2 style="color: #b10101">行业市场Market</h2>
+                        <div><a href="#">美妆</a></div>
+                        <div><a href="#">女鞋</a></div>
+                        <div><a href="#">运动</a></div>
+                        <div><a href="#">食品</a></div>
+                    </div>
+                    <div class="infoStyle">
+                        <h2 style="color: #999999">品牌风尚Brand</h2>
+                        <div><a href="#">尚天猫</a></div>
+                        <div><a href="#">潮牌街</a></div>
+                        <div><a href="#">大牌街</a></div>
+                        <div><a href="#">天猫原创</a></div>
+                    </div>
+                    <div class="infoStyle">
+                        <h2 style="color: #3f89ec">服务指南Help</h2>
+                        <div><a href="#">帮助中心</a></div>
+                        <div><a href="#">品质保障</a></div>
+                        <div><a href="#">特色服务</a></div>
+                        <div><a href="#">7天退换货</a></div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">商家支持</a></li>
+            <li><a href="#">企业采购</a></li>
+            <li><a href="#">淘宝网</a></li>
+            <li><img src="img/common/phone.png"><a href="#">手机版</a></li>
+            <li>|</li>
+            <li id="collectLi"><a href="#">收藏夹</a>
+                <div id="collect">
+                    <a href="#">收藏的店铺</a>
+                    <a href="#">收藏的宝贝</a>
+                </div>
+            </li>
+            <li><img src="img/common/car.png"><a href="#">购物车0件</a></li>
+            <li><img src="img/common/concern.png"><a href="#">我关注的品牌</a></li>
+            <li id="list"><a href="#">我的淘宝</a>
+                <div class="listMain">
+                    <div>已买到的宝贝</div>
+                    <div>已卖出的宝贝</div>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div style="width: 100%">
+        <div id="rightMain">
+            <div id="logo" style="margin-left:0"><img src="img/logo.gif" alt=""></div>
+            <input type="text" placeholder="输入想买的商品" id="search">
+            <div id="searchBtn">搜索</div>
+            <div id="searchKey"><span style="color: #ff0000;">沙滩裙</span> | <span>电风扇</span> | <span style="color: #ff0000;">短裤男</span>
+                | <span>凉鞋</span> | <span style="color: #ff0000;">泳衣</span> | <span>伞</span> | <span
+                        style="color: #ff0000;"> 蚊帐</span> | <span>耳机</span> | <span style="color: #ff0000;">防晒衣</span> |
+                <span> 双肩包</span></div>
+        </div>
+    </div>
+    <br/>
+    <div style="width: 100%">
+        <form id="login">
+            <label>手机号：</label>
+            <input name="phone" type="text" placeholder="可用于登录和找回密码" required>
+            <span id="checkPhone"><img src="img/regist/regist_error.png" alt="">请输入正确的电话号码</span>
+            <span id="checkPhoneTrue"><img src="img/regist/regist_success.png" alt=""></span>
+            <br/>
+            <label id="password">密码：</label>
+            <input name="password" type="password" placeholder="密码" required>
+            <span id="checkPassword"><img src="img/regist/regist_error.png" alt="">不得少于6位且多于12位</span>
+            <span id="checkPasswordTrue"><img src="img/regist/regist_success.png" alt=""></span>
+            <br/>
+            <div>
+                <div id="checkPosition">
+                    <label>验证码：</label>
+                    <input name="code" type="text" placeholder="验证码" id="check" required>
+                </div>
+                <div id="code">请点击</div>
+                <span id="checkCode"><img src="img/regist/regist_error.png" alt="">验证码输入错误</span>
+                <span id="checkCodeTrue"><img src="img/regist/regist_success.png" alt=""></span>
+            </div>
+            <br/>
+            <button>注册</button>
+        </form>
+    </div>
+    <div id="endDiv">
+        <div id="endDiv_">
+            <div id="endDiv_top">
+                <div class="endDivTop">
+                    <a href="#"><img src="img/end/top_1.png"/></a>
+                </div>
+                <div class="endDivTop">
+                    <a href="#"><img src="img/end/top_2.png"/></a>
+                </div>
+                <div class="endDivTop">
+                    <a href="#"><img src="img/end/top_3.png"/></a>
+                </div>
+                <div class="endDivTop">
+                    <a href="#"><img src="img/end/top_4.png"/></a>
+                </div>
+            </div>
+            <div id="endDiv_center">
+                <div class="endDiv_center">
+                    <div style="text-align: left;margin-left: auto;margin-right: auto;width:50%;">
+                        <span>购物指南</span><br/>
+                        <span style="font-size: 12px;color:#999;">免费注册</span><br/>
+                        <span style="font-size: 12px;color:#999;">开通支付宝</span><br/>
+                        <span style="font-size: 12px;color:#999;">支付宝充值</span><br/>
+                    </div>
+                </div>
+                <div class="endDiv_center">
+                    <div style="text-align: left;margin-left: auto;margin-right: auto;width:50%;">
+                        <span>天猫保障</span><br/>
+                        <span style="font-size: 12px;color:#999;">发票保障</span><br/>
+                        <span style="font-size: 12px;color:#999;">售后规划</span><br/>
+                        <span style="font-size: 12px;color:#999;">缺货赔付</span><br/>
+                    </div>
+                </div>
+                <div class="endDiv_center">
+                    <div style="text-align: left;margin-left: auto;margin-right: auto;width:50%;">
+                        <span>支付方式</span><br/>
+                        <span style="font-size: 12px;color:#999;">快捷支付</span><br/>
+                        <span style="font-size: 12px;color:#999;">信用卡</span><br/>
+                        <span style="font-size: 12px;color:#999;">余额宝</span><br/>
+                        <span style="font-size: 12px;color:#999;">蚂蚁花呗</span><br/>
+                        <span style="font-size: 12px;color:#999;">货到付款</span><br/>
+                    </div>
+                </div>
+                <div class="endDiv_center">
+                    <div style="text-align: left;margin-left: auto;margin-right: auto;width:50%;">
+                        <span>商家服务</span><br/>
+                        <span style="font-size: 12px;color:#999;">商家入住</span><br/>
+                        <span style="font-size: 12px;color:#999;">商家中心</span><br/>
+                        <span style="font-size: 12px;color:#999;">天猫智库</span><br/>
+                        <span style="font-size: 12px;color:#999;">天猫规则</span><br/>
+                        <span style="font-size: 12px;color:#999;">物流服务</span><br/>
+                    </div>
+                </div>
+                <div class="endDiv_center">
+                    <img src="img/erweima.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #dd2727;background-color: #000;">
+            <div id="endDiv_bottom">
+                <div style="padding: 5px;">
+                    <a href="#">关于天猫</a> 帮助中心 开放平台 诚聘英才 联系我们 网站合作 法律声明 知识产权 廉正举报 规则意见征集
+                </div>
+                <div style="padding: 5px;">阿里巴巴集团| 淘宝网 | 天猫 | 聚划算 | 全球速卖通 | 阿里巴巴国际交易市场| 1688 | 阿里妈妈 | 阿里旅行·去啊 | 阿里云计算 |
+                    YunOS | 阿里通信 | 万网 | 高德
+                </div>
+                <div style="padding: 5px;">优视 | 友盟 | 虾米 | 天天动听 | 来往 | 钉钉 | 支付宝</div>
+                <div style="padding: 5px;">增值电信业务经营许可证： 浙B2-20110446网络文化经营许可证：浙网文[2015]0295-065号互联网医疗保健信息服务 审核同意书
+                    浙卫网审【2014】6号
+                </div>
+                <div style="padding: 5px;">互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</div>
+                <div style="padding: 5px;">© 2003-2016 TMALL.COM 版权所有</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/head.js"></script>
+</html>

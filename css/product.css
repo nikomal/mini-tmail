@@ -1,0 +1,359 @@
+* {
+    margin:0;
+    padding:0;
+}
+#container {
+    position: absolute;
+    width:100%;
+}
+#info {
+    margin-left: -935px;
+    width:1000px;
+    position: absolute;
+    background-color: #fff;
+    height:200px;
+    z-index: 1000;
+}
+.infoStyle {
+    float: left;
+    margin-left: 50px;
+    width:200px;
+    height:100px;
+}
+.infoStyle li {
+    float: left;
+}
+body{
+    margin: 0;
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+#productInfoContext{
+    width:auto;
+    min-width:990px;
+}
+#productInfoContext_{
+    width:990px;
+    height:430px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#productInfo_left{
+    width:800px;
+    float: left;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 10px;
+}
+#productInfo_right{
+    width:190px;
+    float: right;
+    height:500px;
+    margin-top: -450px;
+}
+#productInfo_right img {
+    width:150px;
+    height:150px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#leftInfo{
+    width:290px;
+    float: left;
+}
+.leftInfoImg{
+    width:290px;
+    height:290px;
+    overflow: hidden;
+    /*绘画*/
+    transition:All 0.4s ease-in-out;
+}
+.leftInfoImg img {
+    width:300px;
+    height:300px;
+}
+#enlarge {
+    display: none;
+    position: absolute;
+    width:100px;
+    height:100px;
+    z-index:100;
+    background-image: url("../img/product/large.png");
+}
+/*
+	旋转： rotate(360deg)
+	移动: translate(0,-10px)
+	放大: scale(2)
+*/
+.leftInfoImg:HOVER + #bigPhoto {
+    display:block;
+}
+.leftInfoImg:HOVER > #enlarge {
+    display:block;
+}
+.leftInfoImg img{
+    float: left;
+}
+#bigPhoto {
+    position: absolute;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #ffffff;
+    width:300px;
+    height:300px;
+    margin-left:300px;
+    margin-top: -300px;
+    display: none;
+}
+#bigPhoto img {
+    margin-top: 0;
+    width:1200px;
+    height:1200px;
+}
+.leftInfoMinImg{
+    padding: 5px;
+}
+.leftInfoMinImg img{
+    border:1px solid #fff;
+}
+.leftInfoMinImg img:HOVER {
+    border:1px solid;
+}
+.leftInfoEnd{
+    font-size: 12px;
+    color: #999;
+    padding-top: 20px;
+}
+.leftInfoEnd a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #999;
+}
+.leftInfoEnd a:hover {
+    color: #ff0000;
+}
+#rightInfo{
+    width:490px;
+    margin-left: 310px;
+    z-index: -1;
+}
+.rightInfo_{
+    z-index: -1;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#productImgEvaluate{
+    width:990px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#productImgEvaluate_{
+    width:800px;
+
+}
+#leftProductEvaluate{
+    width:150px;
+    float:left;
+}
+#leftProductEvaluate img {
+    margin-top: 30px;
+    margin-left: 15px;
+    width:100px;
+    height:100px;
+}
+#rightProductEvaluate{
+    width:650px;
+    float:right;
+}
+#tabTitle{
+    background-color: #ffffff;
+    width:650px;
+    height:36px;
+    border:1px solid #c2bfbf;
+}
+.fix {
+    position: fixed;
+    top:0;
+}
+.tabDiv{
+    cursor: pointer;
+    float: left;
+    font-size:12px;
+    text-align: center;
+    padding:10px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+#tabInfo_1{
+    width:650px;
+    margin-bottom: 10px;
+    border:1px solid #999;
+}
+#tabInfo_1 img{
+    width:650px;
+}
+#tabInfoTitle_1{
+    color:#999;
+    width:630px;
+    padding: 10px;
+    font-size: 12px;
+}
+.text {
+    font-size: 12px;
+    color:grey;
+    float: left;
+    width:150px;
+    margin-left: 40px;
+    margin-top: 20px;
+    height:200px;
+}
+.text div   {
+    margin-top: 10px;
+}
+#tabInfo_2{
+    width:630px;
+}
+#tabInfoTitle_2{
+    color:#999;
+    width:650px;
+    font-size: 12px;
+    border:1px solid #c2bfbf;
+}
+.evaluateInfo{
+    color:#dd2727;
+    margin-left:20px;
+    margin-top:10px;
+    float: left;
+    border:1px solid #fab2b2;
+    padding: 3px 5px 3px 5px;
+    border-radius:3px;
+}
+.evaluateInfo:HOVER {
+    border:1px solid #c2bfbf;
+}
+.selected{
+    color:#dd2727;
+    border-top: 1px solid #dd2727;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+#shop {
+    margin-top: 20px;
+    width:490px;
+    margin-left: 310px;
+    height:200px;
+}
+.yun {
+    margin-top:10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.yunTitle {
+    color: #999;
+    margin-right:20px;
+}
+.shopNum {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.color {
+    float: left;
+    border:1px solid #999;
+    margin-left: 10px;
+    width:50px;
+    text-align: center;
+    cursor: pointer;
+}
+#goumai {
+    width: 200px;
+    margin-left: 70px;
+    background-color: pink;
+    height: 40px;
+    margin-top: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+#tabInfoContext_2 {
+    width:645px;
+    height:500px;
+}
+.pingJiaContext {
+    margin-top: 30px;
+    margin-left: 20px;
+    width:100%;
+    height:200px;
+}
+.pingJiaLeft {
+    font-size: 12px;
+    width:400px;
+    float: left;
+}
+.time {
+    margin-top: 10px;
+    color: #999;
+}
+.pingJiaRight {
+    width:245px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+    font-size: 12px;
+}
+.pingJiaColor {
+    margin-left: 5px;
+    color: #999;
+}
+.pingJiaPerson {
+    margin-left: 20px;
+}
+#endDiv{
+    margin-top: 50px;
+    width:auto;
+    min-width:990px;
+    height:400px;
+    background-color: #fff;
+    border-top:1px solid #ededed;
+}
+#endDiv_{
+    width:990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#endDiv_top{
+    height: 89px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #ededed;
+}
+.endDivTop{
+    width:25%;
+    height: 100px;
+    float: left;
+}
+#endDiv_center{
+    height: 200px;
+    text-align: center;
+}
+.endDiv_center{
+    width:20%;
+    padding-top:20px;
+    height: 180px;
+    float: left;
+}
+#endDiv_bottom{
+    width:990px;
+    height: 199px;
+    margin-left:auto;
+    margin-right:auto;
+    color: #fff;
+    font-size: 12px;
+}
+#endDiv_bottom a{
+    text-decoration: none;
+    color: #fff;
+}

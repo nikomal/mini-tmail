@@ -1,0 +1,173 @@
+/* CSS Document */
+@CHARSET "UTF-8";
+img, div, p, a {
+    margin: 0;
+    padding: 0
+}
+
+.j-floor {
+    width: auto;
+    min-width: 990px;
+    font-family: "Microsoft YaHei", SimSun, '\5b8b\4f53', sans-serif;
+    margin-top: 30px;
+	position:relative;
+}
+
+.color-mark {
+    margin-top: 30px;
+    width: 100%;
+    height: 470px;
+}
+
+.floor-line-con {
+    width: 990px;
+    height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+.j-middle-column {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+	height:450px;
+	/*border:1px solid black;*/
+}
+
+.foor-name {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    color: black;
+    line-height: 18px;
+    height: 18px;
+    margin-left: 10px;
+    float: left;
+}
+
+.foor-name-sn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: black;
+    line-height: 24px;
+    height: 18px;
+    margin-left: 10px;
+    float: left;
+}
+
+.hotword {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 10px;
+    font-size: 14px;
+    border: 0;
+    border-bottom: 1px solid whiteSmoke;
+}
+
+.j-big-banner {
+    float: left;
+    position: relative;
+    width: 246px;
+    height: 440px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.j-big-banner img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    -webkit-transition: opacity 300ms ease-out;
+}
+
+.act-title {
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    -webkit-animation: myAct-title 7s infinite;
+}
+
+.act-title-p {
+    height: 30px;
+    line-height: 30px;
+}
+
+@keyframes myAct-title { /* 定义动画策略 */
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: 0px;
+    }
+    45% {
+        top: 15px;
+    }
+    60% {
+        top: 15px;
+    }
+    75% {
+        top: 30px;
+    }
+    90% {
+        top: 30px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+.title-con {
+    height: 110px;
+    width: 100%;
+    color: white;
+    background-color: #19C8A9;
+    position: relative;
+}
+
+.title-sb{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.sub-title {
+    font-size: 14px;
+}
+
+.title-con img {
+    position: absolute;
+    height: 30px;
+    width: 139px;
+    left: 50%;
+    margin-left: -25%;
+    bottom: 0;
+}
+
+.first-grid {
+    width: 225px;
+    height: 220px;
+    padding-left: 22px;
+}
+
+.grid {
+    float: left;
+    display: block;
+    border-bottom: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    position: relative;
+    background-color: #fff;
+}
+
+.first-grid img {
+    width: 154px;
+    height: 154px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.grid .sub-title {
+    color: #19C8A9;
+}
