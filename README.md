@@ -7,4 +7,4 @@
 在![产品](https://raw.githubusercontent.com/nikomal/mini-tmail/master/img/markdown2.png)中的我买到的产品可以连接到产品页面中
   
   
-  ##其中index.html是主页的文件
+##其中index.html是主页的文件
